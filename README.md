@@ -2,6 +2,7 @@
 
 ## Menu
 - [Choix de Symfony](#choix-de-symfony)
+- [Choix de version](#choix-de-version)
 - [Installation de Symfony](#installation-de-symfony)
 - [Lancez le serveur Symfony](#lancez-le-serveur-symfony)
 - [Accédez à votre projet](#accédez-à-votre-projet)
@@ -75,7 +76,7 @@ Retour au [Menu](#menu)
 ### Installation de Symfony
 
 - Version Symfony 7.1.*
-- Version PHP 8.3
+- Version PHP >= 8.2
 - Version Composer 2.7.7
 
 A faire :
@@ -90,23 +91,25 @@ Installation de Composer à partir du lien suivant :
 
 https://getcomposer.org/download/
 
-Choisir `PHP 8.3` pour composer, mais également comme version PHP dans les variables d'environnement `Windows`
+Choisir `PHP 8.2` ou `PHP 8.3` pour composer, mais également comme version PHP dans les variables d'environnement `Windows`
 
 
 Création d'un nouveau projet Symfony (le dernier paramètre est le nom du projet) :
 
 ```bash
-symfony new --webapp SymfonyLast0724
+symfony new --webapp projet1
 ```
 
 L'argument `--webapp` permet de créer un projet Symfony avec une structure de base pour une application web.
 
 **N'oubliez pas de rentrer dans le dossier du projet avant de lancer les commandes Symfony**
 
-Dans notre cas, le dossier du projet est `SymfonyLast0724` :
+Il est important de supprimer le dossier `.git` du projet si vous ne souhaitez pas utiliser Git pour ce projet de test.
+
+Dans notre cas, le dossier du projet est `projet1` :
 
 ```bash
-cd SymfonyLast0724
+cd projet1
 ```
 
 ---
